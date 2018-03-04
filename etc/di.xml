@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Product\LinkTypeProvider">
+        <arguments>
+            <argument name="linkTypes" xsi:type="array">
+                <item name="customlinked" xsi:type="const">Ibnab\CustomLinked\Model\Product\Link::LINK_TYPE_CUSTOMLINKED</item>
+            </argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Catalog\Model\ProductLink\CollectionProvider">
+        <arguments>
+            <argument name="providers" xsi:type="array">
+                <item name="customlinked" xsi:type="object">Ibnab\CustomLinked\Model\ProductLink\CollectionProvider\Customlinked</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

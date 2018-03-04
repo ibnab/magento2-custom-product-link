@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Related">
+        <plugin name="custom_change_modifyMeta_after" type="Ibnab\CustomLinked\Plugin\Related"/>
+    </type>
+    <type name="Ibnab\CustomLinked\Model\ProductLink\CollectionProvider\Customlinked">
+        <plugin name="change_link_before" type="Ibnab\CustomLinked\Plugin\Related"/>
+    </type>
+</config>
