@@ -1,4 +1,4 @@
-# code related to course
+# Code related to course =>
 # Adminhtml UI: Create your custom linked products type  programmatically like (Related Crosssell Upsell products)
 
 Full course and video:
